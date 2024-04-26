@@ -1,0 +1,22 @@
+{
+  "name": "ostad-ecommerce-website-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "jose": "^5.2.4",
+    "next": "14.2.3",
+    "nodemailer": "^6.9.13",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "prisma": "^5.13.0"
+  }
+}
