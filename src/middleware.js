@@ -15,7 +15,7 @@ export async function middleware(request, response) {
     if (request.url.startsWith("/api/")) {
       return NextResponse.json({ status: "fail", data: "Unauthorized" }, { status: 401 });
     } else {
-      return request.redirect("/login");
+      return NextResponse.redirect("/login");
     }
   }
 }
