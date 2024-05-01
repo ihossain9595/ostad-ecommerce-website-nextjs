@@ -1,5 +1,7 @@
 import Features from "@/components/features/features";
 import Master from "@/components/master/Master";
+import Brands from "@/components/product/brands";
+import Categories from "@/components/product/categories";
 import Slider from "@/components/product/slider";
 import BrandsSkeleton from "@/skeleton/brands-skeleton";
 import CategoriesSkeleton from "@/skeleton/categories-skeleton";
@@ -15,6 +17,12 @@ export default function Home() {
       <Slider />
       <Suspense fallback={<FeaturesSkeleton />}>
         <Features />
+      </Suspense>
+      <Suspense fallback={<CategoriesSkeleton />}>
+        <Categories />
+      </Suspense>
+      <Suspense fallback={<BrandsSkeleton />}>
+        <Brands />
       </Suspense>
     </Master>
   );
